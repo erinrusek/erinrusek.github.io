@@ -1,0 +1,117 @@
+body {
+    background-image:    url(images/stars-star.gif);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   repeat;
+    background-position: center center;              /* optional, center the image */
+}
+
+
+h1 {
+	font-family: 'Press Start 2P', cursive;
+	text-align: center;
+	color: white;
+	font-size: 80px;
+}
+
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	color: white;
+	font-size: 40px;
+}
+
+h3 {
+	font-family: 'Petit Formal Script', cursive;
+	text-align: center;
+	color: red;
+	font-size: 50px;
+}
+
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.parent {
+  display: block;
+  top: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image1 {
+  display: block;
+  top: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image2 {
+  display: block;
+  top: 200px;
+  left: 30px;
+  border: 1px green solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image3 {
+  display: block;
+  top: 200px;
+  left: 30px;
+  border: 1px green solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image4 {
+  display: block;
+  top: 200px;
+  left: 30px;
+  border: 1px green solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image5 {
+  display: block;
+  top: 200px;
+  left: 30px;
+  border: 1px green solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image6 {
+  display: block;
+  top: 200px;
+  left: 30px;
+  border: 1px green solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image7 {
+  display: block;
+  top: 200px;
+  left: 30px;
+  border: 1px green solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+.image8 {
+  display: block;
+  top: 200px;
+  left: 30px;
+  border: 1px green solid;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fixed1 {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.fixed2 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
