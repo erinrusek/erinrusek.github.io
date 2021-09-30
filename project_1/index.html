@@ -3,29 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Magic 8 Ball: project demo</title>
+    <title>Ask, if you dare</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,300&display=swap" rel="stylesheet">
     <!-- Link to JavaScript -->
     <script src=scripts.js defer></script>
     <!-- Including "defer" ensures that the script will not run until the HTML page is fully loaded and rendered. -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Magic 8 Ball demo</h1>
-    <h2 id="display">Replace with response</h2>
-    <p>Refresh for new response.</p>
+    <div class="box">
+        <img id="ball" alt="Magical crystal ball" src="ball.gif">
+        <h2>Anything you desire...</h2>
+        <input type='text' id='name' value = 'Ask anything' 
+    	onfocus = 'this.value = ""' />
+        <input id="button" type="button" value="divinate" onclick="response()">
+        <p id="response"></p>
+        
+    </div>
+
+    <div class="cursor"></div>
 </body>
+
 </html>
 
+<!-- Style it dark and glitchy -->
 
-
-
-
-
-
-
-
-<!-- HOW I WANT THE BALL TO FUNCTION 
-
-1st. page loads with a response bar and a button 
-user is instructed to put question in bar and press button for result
-
-2nd. When button is clicked, a random response appears inside the ball-->
+<!-- <div id="ball">
+    <img src="ball.gif">
+    <h4>
+        Type your question in the box and receive your fortune  -->
+        <!-- Glitch text here -->
+    <!-- </h4>
+    <input id= "user-input" type="input">
+    <input id= "button" type="button" value="submit" onclick="response()">
+    <p id= "response"></p>
+</div> -->

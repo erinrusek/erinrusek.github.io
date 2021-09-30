@@ -1,0 +1,14 @@
+body {
+    font-family: 'Chakra Petch', sans-serif;
+    color: #9b1c1c;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    background-image:    url(glitch.gif);
+    background-size:     cover;                      /* <------ */
+    background-repeat:   repeat;
+    background-position: center center;              /* optional, center the image */
+    cursor: url('cursor.png'), auto;
+  }
+  
+ 
