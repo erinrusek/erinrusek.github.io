@@ -1,0 +1,130 @@
+/* #hashLink {
+  display: none;
+}
+
+#hashLink:target {
+  display: block;
+} */
+
+/* or toggle & toggle:before? */
+
+#ehck {
+ 
+
+    
+}
+
+#stop {
+  display: block;   
+  height: 20px;
+  width: 100%;
+  right: 50%;
+  float: right;
+
+}
+
+#second{
+  height: 800px;
+  top: 110vh;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  float: right;
+}
+
+.result {
+
+  float: right;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+  /* position: relative; */
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  
+}
+
+.resulty {
+  /* position: relative; */
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),
+  0 1px 5px 0 rgba(0,0,0,0.12),
+  0 3px 1px -2px rgba(0,0,0,0.2);
+  background-color: #fff !important;
+  background-image: linear-gradient(#ccc 1px, transparent 1px),
+    linear-gradient(90deg, #ccc 1px, transparent 1px),
+    linear-gradient(#ddd 1px, transparent 1px),
+    linear-gradient(90deg, #ddd 1px, transparent 1px) !important;
+  background-size: 30px 30px, 2px 30px, 20px 20px, 20px 20px !important;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px !important;
+  box-shadow: 0px 0px 5px 0px #888;
+  width: 30vh;
+  
+}
+
+
+
+.resultie {
+
+  /* float: right; */
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  width: 30vh;
+  
+}
+
+.resultie:before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 200px rgba(255, 255, 255, .5);
+  filter: blur(2px);
+}
+
+
+
+a.button {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+
+  text-decoration: none;
+  color: initial;
+}
+
+/* .wrapper {
+  display: inline-flex;
+}
+
+
+
+.dynamic_text {
+  position: relative;
+}
+
+.dynamic_text ::after{
+  position: absolute;
+  content: "";
+  animation: typing 1.5s steps(33) infinite;
+
+}
+
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+} */
+
+
+/* Notes
+How the for loop works: https://www.youtube.com/watch?v=s9wW2PpJsmQ&ab_channel=ProgrammingwithMosh */
+/* print numbers one to 100: https://www.youtube.com/watch?v=H_0EfaVnMdU&ab_channel=DCODESHOW
+Printing patterns: https://www.youtube.com/watch?v=5LzcfT2_3_E&ab_channel=Chidre%27sTechTutorials */

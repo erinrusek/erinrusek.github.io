@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+<title>education center</title>
+<link rel="stylesheet" href="class.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="GFG">
+
+    </div>
+
+    
+    <a href="index.html">link to home</a>
+
+
+    <p id="demo" style="color: gray; font-family: 'Raleway', sans-serif; font-size: 30px; text-align: center;"></p>
+
+
+    <img src="image/profile.png" alt="profile icon" style="height: 150px; width: 150px; display: block;
+    margin-left: auto;
+    margin-right: auto;">
+    <p id="notyou" style="color: gray; font-family: 'Raleway', sans-serif; font-size: 15px; text-align: center;">Is this not you?     
+        <!-- <a href="index.html">click to verify</a> -->
+    </p>
+
+    <!-- image appear on verify -->
+
+
+    <img id="bigpic" src="bigpic" style="display:none; position: relative; top: -30px; text-align: center; top: 10%;" />
+
+    <button onclick="picture()" style="margin: 0; text-align: center; position: relative; right: -47.5%;">click to verify</button>
+
+    <script type="text/javascript">
+
+        function picture(){ 
+        var pic = "http://img.tesco.com/Groceries/pi/118/5000175411118/IDShot_90x90.jpg "
+        document.getElementById('bigpic').src = pic.replace('90x90', '90x90');
+        document.getElementById('bigpic').style.display='block';
+
+        }
+
+
+    </script>
+
+
+
+
+    <p id="othertext" style="color: gray; font-family: 'Raleway', sans-serif; font-size: 30px; text-align: center;">
+      
+        "Creative Computing" begins in 1hr 30min minutes.
+      
+        <div class="adtype" style="color: gray; font-family: 'Raleway', sans-serif; font-size: 20px; text-align: center;">
+        You will be notified when your class is beginning <br><br><br>
+       
+        <!-- <button type="button" style="text-align: center;">Write Teacher</button> -->
+        <!-- <a class="button" href="mailto:email@email.de">Write Teacher</a> -->
+        <a href="mailto:email@email.de" style="color: black;">
+            <button class="button">Write teacher</button>
+            </a>
+
+        <!-- <button type="button" style="text-align: center;">Skip Class</button> -->
+
+        <input type="button" id="btnShowMsg" value="Skip Class" onClick="showMessage()" />
+        <script type="text/javascript">
+            function showMessage() {
+                alert("You have opted to skip this class. Your calendar has been updated. 𝚈𝙾𝚄 𝙰𝚁𝙴 𝙰𝙻𝙻𝙾𝚆𝙴𝙳 2 𝙼𝙾𝚁𝙴 𝙰𝙱𝚂𝙴𝙽𝙲𝙴𝚂.");
+            }
+        </script>
+
+        <button type="button" style="text-align: center;">Submit Work</button>
+    </div>
+    </p>
+
+    <div class="meanwhile" style="color: red; font-family: 'Raleway', sans-serif; font-size: 20px; text-align: center;">
+        <br>  Advanced Typography is still in session, re-join?    <br> <br> <a href="inclass.html" ><button>YES!</button></a><br><br>
+    
+
+</body>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = "<br><br><br><br>It is currently <br>" + d;
+
+
+document.body.style.backgroundColor = "#000";
+</script>
+</html>
+
+
+<!-- 
+TO DO 
+reposition image
+make seperate class room camera on & lots of people in the room 
+complete button actions and link
+-->

@@ -1,0 +1,54 @@
+body {
+    cursor: url('images/custom.svg'), auto;
+    height: 100vh;
+    margin: 0;
+}
+
+#clock_css {
+    background: #d1d1d1;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 7px solid black;
+    margin-left: 59em;
+    margin-top: 5em;
+    position: absolute;
+    z-index: 4;
+    font-family: 'Abel', sans-serif;
+}
+
+#month {
+    position: inherit; 
+    margin-left: 10em;
+    font-family: 'Abel', sans-serif;
+}
+
+#bg {
+    position: fixed; 
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%;
+  }
+  #bg img {
+    position: relative; 
+    z-index: 2;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    min-width: 50%;
+    min-height: 50%;
+    opacity: 0.2;
+  }
+
+
+  img {
+      height: 100%;
+      width: 100%;
+      /* position: absolute;  */
+      z-index: 3;
+      position: relative;
+  }
+
