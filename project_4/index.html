@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>liminal device</title>
+		<link rel="stylesheet" href="styles.css">
+		<script src="jquery-3.6.0.min.js"></script>
+	<!-- favicon -->
+<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+<!-- hide & show happy image   -->
+<style>
+	#myDIV {
+	  padding: 50px 0;
+	  text-align: center;
+	  background-color: lightblue;
+	}
+	</style>
+
+	<!-- hide & show rainy image   -->
+<style>
+	#myDIVAGE {
+	  padding: 50px 0;
+	  text-align: center;
+	  background-color: lightblue;
+	}
+	</style>
+
+	<!-- hide & show scary eye!!!   -->
+<style>
+	#myDIVAGEY {
+	  padding: 50px 0;
+	  text-align: center;
+	  background-color: lightblue;
+	}
+	</style>
+</script>
+	</head>
+	<body>
+
+<!-- day & night button -->
+<img src="images/blank.png" id="myImage" width="100" height="300" style="width: 35em; opacity: 0.2; position: relative; height: 42em; top: 10em; right: -20em;">
+<!-- <input type="button" onclick="changeImage()" value="Change" /> -->
+<button class="btn" onclick="changeImage()" style="top: 4vh; position: relative; background-color: red; font-size: 15px; right: 4.5em; z-index: 11; opacity: 0;">change</button>
+
+
+<script>
+	function changeImage() {
+		var image = document.getElementById('myImage');
+		if (image.src.match("images/yellow")) {
+			image.src = "images/blue.png";
+		}
+		else {
+			image.src = "images/yellow.png";
+		}
+	}
+
+</script>
+
+<!-- liminal image slider -->
+<div class="slider">
+	<div class="img-box">
+		<img src="images/room1.jpeg" class="slider-img">
+	</div>
+
+	<button class="btn" onclick="prev()" style="opacity: 0;">Prev</button>
+	<button class="btn" onclick="next()" style="opacity: 0;">Next</button>
+</div>
+
+
+
+
+<!-- power button -->
+<button id="out" style="opacity: 1; position: relative; top: -61em; right: -28em; z-index: 11; height: 35px; opacity: 0;">Fade Out</button>
+<div id="myDiv" class="fade-in one">Some text</div>
+
+
+        <!-- conditions -->
+        <!-- <button class="btn" onclick="happ()">happy</button> -->
+        <!-- <button class="btn" onclick="rain()">rainy</button> -->
+        <!-- <button class="btn" onclick="clou()">question</button>  -->
+		<!-- <button class="btn" onclick="play()">play</button> -->
+        <!-- <button class="btn" onclick="powe()">power</button> -->
+        <!-- <button class="btn" onclick="nigh()">daynight</button> -->
+        <!-- <button class="btn" onclick="play()">play</button> -->
+        <!-- <button class="btn" onclick="paus()">pause</button> -->
+
+
+
+<!-- audio button  -->
+		<script>
+			function play() {
+			  var audio = document.getElementById("audio");
+			  audio.play();
+			}
+		  </script>
+	  
+		  <input type="button" value="sound" class="btn" onclick="play()" style="top: -87em; position: relative; background-color: red; font-size: 30px; right: -23em; z-index: 11; opacity: 0;">
+		  <audio id="audio" src="audio/knock.wav"></audio>
+	  
+
+		<script src="main.js"></script>
+
+<!-- liminal device -->
+			<img src="images/liminal_core.png" alt="device" style="width: 55em; height: 75em; top: -140em; position: 
+			relative; z-index: 10; margin: 0 auto;">
+
+<!-- play&pause vcr vid -->
+<button onclick="playVid()" type="button" style="opacity: 0; position: relative; top: -196em; right: 49em; z-index: 11; height: 35px;">Play Video</button>
+<button onclick="pauseVid()" type="button" style="opacity: 0; position: relative; top: -190em; right: 55em; z-index: 11; height: 35px;">Pause Video</button><br> 
+
+<video id="vcr">
+  <source src="images/vcr.mp4" type="video/mp4">
+</video>
+
+<script> 
+var vid = document.getElementById("vcr"); 
+
+function playVid() { 
+  vid.play(); 
+} 
+
+function pauseVid() { 
+  vid.pause(); 
+} 
+</script> 
+
+<!-- show happy gif -->
+
+<div onclick="grass();">
+	<a href="#" onclick="toggle_visibility('grass');" style="top: -109em; position: relative; background-color: red; font-size: 30px; right: -17em; z-index: 11; opacity: 0">Click here</a>
+	
+		<div id="grass" style="display:none;" ><img src="images/grass.gif" alt="grass" style="height: 20em; width: 35em; top: -240em; position: relative; right: -18em;">
+		</div>
+	</div>
+
+	<!-- show rainy gif -->
+
+<div onclick="rain();">
+	<a href="#" onclick="toggle_visibility('rain');" style="top: -113em; position: relative; background-color: red; font-size: 30px; right: -17em; z-index: 11; opacity: 0">Click here</a>
+	
+		<div id="rain" style="display:none;" ><img src="images/rainy.gif" alt="rain" style="height: 50em; width: 35em; top: -255em; position: relative; right: -18em;">
+		</div>
+	</div>
+
+	<!-- scary eye!!! -->
+
+<div onclick="eye();">
+	<a href="#" onclick="toggle_visibility('eye');" style="top: -111em; position: relative; background-color: red; font-size: 30px; right: -22em; z-index: 11; opacity: 0;">Click here</a>
+	
+		<div id="eye" style="display:none; top: -250em; position: relative; right: -70em; height: 10px; width: 10px; z-index: -1;" ><img src="images/scary.gif" alt="scary eye" style="height: 100px; width: 150px;">
+		</div>
+	</div>
+
+	</body>
+</html>
+
+

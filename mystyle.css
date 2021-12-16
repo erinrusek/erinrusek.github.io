@@ -27,6 +27,12 @@ h3 {
 	font-size: 50px;
 }
 
+h4 {
+  font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	color: white;
+	/* font-size: 20px; */
+}
 
 .center {
   margin-left: auto;

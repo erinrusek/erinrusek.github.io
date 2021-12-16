@@ -13,10 +13,6 @@
 
 <body>
 
-
-    <!-- <img id='theImage' src='images/day.jpg' /> -->
-
-
     <div id="clock_css">
         <div id="ctime">
             <div id="month">
@@ -26,10 +22,6 @@
 
     <div id="clocky"></div>
 
-    
-
-
-    
 
 <!-- this is connected to the SHADOW FUNCTION -->
 <h1 id="ctime"></h1> 
@@ -48,28 +40,28 @@
 <script>
 
 
-// show time in Hours, numbers and min 
-function checkTime(i) {
-  if (i < 10) {
-    i = "0" + i;
-  }
-  return i;
-}
+// shows time in hours, minutes and seconds
+    function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+    }
 
-function startTime() {
-  var today = new Date();
-  var h = today.getHours();
-  var m = today.getMinutes();
-  var s = today.getSeconds();
+    function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
 
-  m = checkTime(m);
-  s = checkTime(s);
-  document.getElementById('ctime').innerHTML = h + ":" + m + ":" + s;
-  t = setTimeout(function() {
-    startTime()
-  }, 500);
-}
-startTime();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('ctime').innerHTML = h + ":" + m + ":" + s;
+    t = setTimeout(function() {
+        startTime()
+    }, 500);
+    }
+    startTime();
 
 // CREDIT TO Tushar Gupta - curioustushar STACKOVERFLOW
 
@@ -78,53 +70,50 @@ var d = new Date()
 var h = d.getHours()
 
 // get month & year
-window.onload = function() {
-    var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];;
-    var date = new Date();
+    window.onload = function() {
+        var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];;
+        var date = new Date();
 
-    document.getElementById('ctime').innerHTML = months[date.getMonth()] + ' ' + date.getFullYear();
+        document.getElementById('ctime').innerHTML = months[date.getMonth()] + ' ' + date.getFullYear();
 };
 
 
 //background time
-if (h < 6) document.write('<body background="sky.jpg" bgcolor="black">')
-else if (h < 7) document.write('<body background="day.jpg" bgcolor="#2b065e">')
-else if (h < 8) document.write('<body background="day.jpg" bgcolor="#1d20a3">')
-else if (h < 9) document.write('<body background="day.jpg" bgcolor="#1d4aa3">')
-else if (h < 10) document.write('<body background="day.jpg" bgcolor="#5795cf">')
-else if (h < 11) document.write('<body background="day.jpg" bgcolor="#80b2e0">')
+    if (h < 6) document.write('<body background="sky.jpg" bgcolor="black">')
+    else if (h < 7) document.write('<body background="day.jpg" bgcolor="#2b065e">')
+    else if (h < 8) document.write('<body background="day.jpg" bgcolor="#1d20a3">')
+    else if (h < 9) document.write('<body background="day.jpg" bgcolor="#1d4aa3">')
+    else if (h < 10) document.write('<body background="day.jpg" bgcolor="#5795cf">')
+    else if (h < 11) document.write('<body background="day.jpg" bgcolor="#80b2e0">')
 
-else if (h < 12) document.write('<body background="day.jpg" bgcolor="#80b2e0">')
-else if (h < 13) document.write('<body background="day.jpg" bgcolor="#80b2e0">')
-else if (h < 14) document.write('<body background="day.jpg" bgcolor="#80b2e0">')
-else if (h < 15) document.write('<body background="day.jpg" bgcolor="#80b2e0">')
-else if (h < 16) document.write('<body background="day.jpg" bgcolor="#5795cf">')
-else if (h < 17) document.write('<body background="day.jpg" bgcolor="#531b7d">')
+    else if (h < 12) document.write('<body background="day.jpg" bgcolor="#80b2e0">')
+    else if (h < 13) document.write('<body background="day.jpg" bgcolor="#80b2e0">')
+    else if (h < 14) document.write('<body background="day.jpg" bgcolor="#80b2e0">')
+    else if (h < 15) document.write('<body background="day.jpg" bgcolor="#80b2e0">')
+    else if (h < 16) document.write('<body background="day.jpg" bgcolor="#5795cf">')
+    else if (h < 17) document.write('<body background="day.jpg" bgcolor="#531b7d">')
 
-else if (h < 18) document.write('<body background="day.jpg" bgcolor="#39063b">')
-else if (h < 19) document.write('<body background="day.jpg" bgcolor="#0f0221">')
-else if (h < 20) document.write('<body background="day.jpg" bgcolor="#06011a">')
-else if (h < 21) document.write('<body background="day.jpg" bgcolor="black">')
-else if (h < 22) document.write('<body background="day.jpg" bgcolor="black">')
-else if (h < 23) document.write('<body background="day.jpg" bgcolor="black">')
-else if (h < 24) document.write('<body background="day.jpg" bgcolor="black">')
+    else if (h < 18) document.write('<body background="day.jpg" bgcolor="#39063b">')
+    else if (h < 19) document.write('<body background="day.jpg" bgcolor="#0f0221">')
+    else if (h < 20) document.write('<body background="day.jpg" bgcolor="#06011a">')
+    else if (h < 21) document.write('<body background="day.jpg" bgcolor="black">')
+    else if (h < 22) document.write('<body background="day.jpg" bgcolor="black">')
+    else if (h < 23) document.write('<body background="day.jpg" bgcolor="black">')
+    else if (h < 24) document.write('<body background="day.jpg" bgcolor="black">')
 
-// else if (h < 18) document.write('<body background="day.jpg" bgcolor="yellow">')
-// else if (h < 24) document.write('<body background="night.jpg" bgcolor="orange">')
+    
 </script>
 
-
-
 <script>
- var img = document.createElement('img');
-calcSrc();
-setInterval(calcSrc, 60000);
+    var img = document.createElement('img');
+    calcSrc();
+    setInterval(calcSrc, 60000);
 
-document.body.appendChild(img); // place image
+    document.body.appendChild(img); 
 
-function calcSrc() {
-    img.src = new Date().getHours() < 17 ? 'images/day.png' : 'images/night.png';
-}
+    function calcSrc() {
+        img.src = new Date().getHours() < 17 ? 'images/day.png' : 'images/night.png';
+    }
 
 </script>
 <script src="main.js"></script>
